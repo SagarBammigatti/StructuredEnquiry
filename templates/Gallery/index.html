@@ -1,0 +1,15 @@
+{% extends "Gallery/base.html" %}
+{% block body_block %}
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>Gallery of Temples</h1>
+    {% if user.is_authenticated %}
+        <h2>Welcome {{ user.username }}!</h2>
+    {% else %}
+        <h2>Welcome!</h2>
+    {% endif %}
+  </div>
+</div>
+
+{% endblock %}
